@@ -1,0 +1,9 @@
+HIGH PRIORITY
+- [ ] Add secret key base and store in password manager
+- [ ] Make sure rodauth configuration is robust (check all available config options)
+- [ ] Set up action mailer
+
+
+
+LOW PRIORITY
+- [ ] Set up ruby linter (standardrb?)
