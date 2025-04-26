@@ -11,4 +11,12 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  draw "api/v1"
+
+  def draw(routes_name)
+    route_parts = %w[config routes] + routes_name.to_s.split(File::SEPARATOR)
+    filename = "#{route_parts.slice!(-1)}.rb"
+    instance_eval(File.read(Rails.root.join(*(route_parts << filename))))
+  end
 end
