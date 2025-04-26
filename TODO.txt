@@ -3,7 +3,8 @@ HIGH PRIORITY
 - [ ] Make sure rodauth configuration is robust (check all available config options)
 - [ ] Set up action mailer
 
-
+MEDIUM PRIORITY
+- [ ] Update README
 
 LOW PRIORITY
 - [ ] Set up ruby linter (standardrb?)
