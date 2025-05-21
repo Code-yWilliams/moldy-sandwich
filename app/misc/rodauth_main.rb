@@ -4,7 +4,7 @@ class RodauthMain < Rodauth::Rails::Auth
   configure do
     # List of authentication features that are loaded.
     enable :create_account, :verify_account, :verify_account_grace_period,
-      :login, :logout, :jwt,
+      :login, :logout, :jwt, :active_sessions,
       :reset_password, :change_password, :change_login, :verify_login_change,
       :close_account
 
@@ -130,5 +130,11 @@ class RodauthMain < Rodauth::Rails::Auth
     # verify_account_grace_period 3.days.to_i
     # reset_password_deadline_interval Hash[hours: 6]
     # verify_login_change_deadline_interval Hash[days: 2]
+
+    active_sessions_table :account_active_session_keys
+    active_sessions_account_id_column :account_id
+    active_sessions_session_id_column :session_id
+    active_sessions_created_at_column :created_at
+    active_sessions_last_use_column :last_use
   end
 end
