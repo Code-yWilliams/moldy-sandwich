@@ -9,8 +9,11 @@ end
 #
 #  id            :bigint           not null, primary key
 #  email         :citext           not null
+#  name          :string
 #  password_hash :string
+#  phone         :string
 #  status        :integer          default("unverified"), not null
+#  username      :string
 #
 # Indexes
 #
