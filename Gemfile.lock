@@ -325,7 +325,7 @@ GEM
     thruster (0.1.13-arm64-darwin)
     thruster (0.1.13-x86_64-darwin)
     thruster (0.1.13-x86_64-linux)
-    tilt (2.6.0)
+    tilt (2.6.1)
     timeout (0.4.3)
     turbo-rails (2.0.13)
       actionpack (>= 7.1.0)
@@ -383,7 +383,7 @@ DEPENDENCIES
   solid_queue
   stimulus-rails
   thruster
-  tilt (~> 2.4)
+  tilt (~> 2.6)
   turbo-rails
   tzinfo-data
   web-console
